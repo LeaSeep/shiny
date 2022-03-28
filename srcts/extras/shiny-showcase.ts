@@ -131,6 +131,7 @@ function highlightSrcref(
   }
   // End any previous highlight before starting this one
   $(el).stop(true, true).effect("highlight", null, 1600);
+  $(el).scrollIntoView();
 }
 
 // If this is the main Shiny window, wire up our custom message handler.
